@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; style-src-attr 'unsafe-inline'; font-src 'self'; img-src 'self' data:; connect-src 'self'; manifest-src 'self'; worker-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#07070a">
+<meta name="description" content="PIXEL SCAN by PixelProTech: a personal security diagnostic that tests what a browser can honestly test and guides you through the rest.">
+<meta name="application-name" content="PIXEL SCAN">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="PIXEL SCAN">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<title>PIXEL SCAN — by PixelProTech</title>
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon.ico" sizes="48x48">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preload" href="silkscreen-700.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="jetbrains-mono-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <button class="brand" id="brand" aria-label="PIXEL SCAN home">PIXEL SCAN<small>BY PIXELPROTECH</small></button>
+    <nav aria-label="Sections">
+      <button data-nav="home">Home</button>
+      <button data-nav="learn">Learn</button>
+      <button data-nav="threats">Threat library</button>
+      <button data-nav="emergency">Emergency</button>
+    </nav>
+  </header>
+  <main id="app" tabindex="-1"></main>
+  <noscript><p class="honest">PIXEL SCAN needs JavaScript to run its browser checks.</p></noscript>
+</div>
+<footer>
+  <div class="wrap">
+    <p>PIXEL SCAN is a guided self-assessment by PixelProTech Solutions (Pty) Ltd. It is not antivirus and it does not detect malware. A clean report is not a guarantee that a device is clean.</p>
+    <p>Nothing you answer leaves your device. There are no accounts and no tracking. Only the app's own files are cached so it works offline.</p>
+  </div>
+</footer>
+<script src="app.js"></script>
+</body>
+</html>
